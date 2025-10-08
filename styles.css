@@ -1,0 +1,193 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.banner{
+    background: #154bbf;
+    background: linear-gradient(0deg,rgba(21, 75, 191, 1) 0%, rgba(0, 94, 255, 1) 100%);
+    align-items: center;
+    text-align: center;
+    padding: 50px 50px;
+}
+ 
+.banner h1{
+    font-weight: 600;
+    color: white;
+}
+
+.banner p{
+    color: white;
+}
+
+.join{
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    background-color: red;
+    color: white;
+    font-weight: 500;
+    font-size: 15px;
+    border: none;
+}
+
+.join:hover{
+    background-color: rgb(176, 0, 0);
+    transition: all .8 ease-in;     
+     
+}
+
+.support{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: white;
+    color: #154bbf;
+    font-weight: 500;
+    font-size: 15px;
+    border: none;
+}
+
+.Mission-Statement{
+    background-color: rgb(251, 250, 250);
+    text-align: center;
+    align-items: center;
+    color: black;
+    padding: 50px;
+    margin: 0;
+}
+
+.containers{
+    padding: 10px;
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items: center; 
+    background-color: whitesmoke;
+}
+.Block-1{ 
+    padding: 20px;
+    height: fit-content;
+    margin-top: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .2);
+    border-radius: 10px;  
+    transition: ease-in .5s;
+}
+
+.Block-1 h1{
+    font-size: 18px;
+}
+
+.Block-1 button{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    font-weight: 500;
+    font-size: 15px;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .2);
+    transition: ease-in .5s;
+}
+
+.Block-2{ 
+    padding: 20px;
+    height: fit-content;
+    margin-top: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .2);
+    border-radius: 10px;  
+    transition: ease-in .5s;
+}
+
+.Block-2 h1{
+    font-size: 18px;
+}
+
+.Block-2 button{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    font-weight: 500;
+    font-size: 15px;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .2);
+    transition: ease-in .5s;
+}
+
+.Block-3{ 
+    padding: 20px;
+    height: fit-content;
+    margin-top: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .2);
+    border-radius: 10px;  
+    transition: ease-in .5s;
+}
+
+.Block-3 h1{
+    font-size: 18px;
+}
+
+.Block-3 button{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    font-weight: 500;
+    font-size: 15px;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .2);
+    transition: ease-in .5s;
+}
+
+.Meet{
+    background-color: rgb(212, 235, 255);
+    text-align: center;
+    align-items: center;
+    color: black;
+    padding: 50px;
+    margin: 0;
+}
+
+.Meet button{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #154bbf;
+    color: white;
+    font-weight: 500;
+    font-size: 15px;
+    border: none;
+}
+
+.Contact{
+    background-color: rgb(10, 33, 60);
+    text-align: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    padding: 50px;
+    margin: 0;
+}
+
+.Contact button{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    font-weight: 500;
+    font-size: 15px;
+    border: none;
+}
+
+footer{
+    background-color: navy;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: white;
+
+}
