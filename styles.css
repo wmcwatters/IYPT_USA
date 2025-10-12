@@ -2,33 +2,131 @@ body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
 }
+
+main {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header{
+    border-bottom: 1px solid #E2E8F0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 5rem;
+}
+
+.nav-link{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #475569;
+}
+
+.nav-link:hover{
+    color: #482ff7;
+}
+
+.nav-logo {
+    font-size: 2.1rem;
+    font-weight: 500;
+    color: #482ff7;
+}
+
 .banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     background: #154bbf;
     background: linear-gradient(0deg,rgba(21, 75, 191, 1) 0%, rgba(0, 94, 255, 1) 100%);
-    align-items: center;
-    text-align: center;
-    padding: 50px 50px;
+    padding: 50px;
 }
  
 .banner h1{
+    font-size: clamp(24px, 2vw, 48px);
     font-weight: 600;
     color: white;
+    margin-bottom: 10px;
 }
 
 .banner p{
+    font-size: clamp(14px, 1vw, 20px);
     color: white;
 }
 
+.Banner-button-group{
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .join{
-    padding: 10px;
-    border-radius: 5px;
-    margin: 10px;
-    background-color: red;
-    color: white;
-    font-weight: 500;
-    font-size: 15px;
-    border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: red;
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .join:hover{
@@ -38,156 +136,252 @@ body {
 }
 
 .support{
-    padding: 10px;
-    border-radius: 5px;
-    background-color: white;
-    color: #154bbf;
-    font-weight: 500;
-    font-size: 15px;
-    border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: white;
+  color: #154bbf;
+  font-weight: 500;
+  font-size: 16px;
+  border: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.support:hover {
+  background-color: #e0e6ff;
+  color: #002f9e;
 }
 
 .Mission-Statement{
-    background-color: rgb(251, 250, 250);
-    text-align: center;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    color: black;
+    justify-content: center;
+    text-align: center;
+    background: #ffffff;
+    color: #101010;
     padding: 50px;
-    margin: 0;
+}
+
+.Mission-Statement h1{
+    font-size: clamp(24px, 2vw, 35px);
+    font-weight: 600;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.Mission-Statement p{
+    font-size: clamp(14px, 1vw, 15px);
+    color: black;
 }
 
 .containers{
-    padding: 10px;
-    gap: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    text-align: center;
-    align-items: center; 
-    background-color: whitesmoke;
-}
-.Block-1{ 
-    padding: 20px;
-    height: fit-content;
-    margin-top: 20px;
-    background-color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, .2);
-    border-radius: 10px;  
-    transition: ease-in .5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+  padding: 40px;
 }
 
-.Block-1 h1{
-    font-size: 18px;
+.block-group{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.Block-1 button{
-    padding: 10px;
-    border-radius: 5px;
-    background-color: white;
-    color: black;
-    font-weight: 500;
-    font-size: 15px;
-    border: none;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, .2);
-    transition: ease-in .5s;
+.Block-1,
+.Block-2,
+.Block-3 {
+  background-color: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.Block-2{ 
-    padding: 20px;
-    height: fit-content;
-    margin-top: 20px;
-    background-color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, .2);
-    border-radius: 10px;  
-    transition: ease-in .5s;
+/* Hover effect for a “lift” animation */
+.Block-1:hover,
+.Block-2:hover,
+.Block-3:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.2);
 }
 
-.Block-2 h1{
-    font-size: 18px;
+/* Headings and text */
+.block-group h1 {
+  font-size: clamp(18px, 2vw, 24px);
+  color: #154bbf;
+  margin-bottom: 10px;
 }
 
-.Block-2 button{
-    padding: 10px;
-    border-radius: 5px;
-    background-color: white;
-    color: black;
-    font-weight: 500;
-    font-size: 15px;
-    border: none;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, .2);
-    transition: ease-in .5s;
+.block-group p {
+  font-size: clamp(14px, 1vw, 16px);
+  color: #333;
+  margin-bottom: 20px;
 }
 
-.Block-3{ 
-    padding: 20px;
-    height: fit-content;
-    margin-top: 20px;
-    background-color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, .2);
-    border-radius: 10px;  
-    transition: ease-in .5s;
+/* Buttons */
+.block-group button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #154bbf;
+  color: white;
+  font-weight: 500;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.Block-3 h1{
-    font-size: 18px;
-}
-
-.Block-3 button{
-    padding: 10px;
-    border-radius: 5px;
-    background-color: white;
-    color: black;
-    font-weight: 500;
-    font-size: 15px;
-    border: none;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, .2);
-    transition: ease-in .5s;
+.block-group button:hover {
+  background-color: #0037a3;
 }
 
 .Meet{
-    background-color: rgb(212, 235, 255);
-    text-align: center;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    color: black;
+    justify-content: center;
+    text-align: center;
+    background: #cfefff;
+    color: #101010;
     padding: 50px;
-    margin: 0;
 }
 
-.Meet button{
-    padding: 10px;
-    border-radius: 5px;
+.Meet h1{
+    font-size: clamp(24px, 2vw, 35px);
+    font-weight: 600;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.Meet p{
+    font-size: clamp(14px, 1vw, 15px);
+    color: black;
+    margin-bottom: 10px;
+}
+
+.Meet-button{
     background-color: #154bbf;
+    padding: 10px 20px;
+    border-radius: 5px;
     color: white;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 16px;
     border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
 }
+
+.Meet-button:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 10px 18px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+
 
 .Contact{
     background-color: rgb(10, 33, 60);
-    text-align: center;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    color: rgb(255, 255, 255);
+    justify-content: center;
+    text-align: center;
+    color: #101010;
     padding: 50px;
-    margin: 0;
+    margin-bottom: 0;
 }
 
-.Contact button{
-    padding: 10px;
+.Contact h1{
+    font-size: clamp(24px, 2vw, 35px);
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+}
+
+.Contact p{
+    font-size: clamp(14px, 1vw, 15px);
+    color: white;
+    margin-bottom: 10px;
+}
+
+.Contact-button{
+   background-color: red;
+    padding: 10px 20px;
     border-radius: 5px;
-    background-color: red;
     color: white;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 16px;
     border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 footer{
-    background-color: navy;
-    align-items: center;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    color: white;
+  background-color: navy;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: auto;
 
+}
+
+@media only screen and (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        -webkit-transform: translateY(8px) rotate(45deg);
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        -webkit-transform: translateY(-8px) rotate(-45deg);
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .block-group {
+    flex-direction: column;
+    align-items: center;
+   }
+
+  .Block-1,
+  .Block-2,
+  .Block-3 {
+    width: 90%;
+    max-width: 350px;
+  }
 }
