@@ -71,13 +71,15 @@ a {
 }
 
 .nav-link{
-    font-size: 1.6rem;
-    font-weight: 00;
+    font-size: 1.8rem;
+    font-weight:600;
     color: #475569;
 }
 
 .nav-link:hover{
-    color: #482ff7;
+    color: #154bbf;
+    transition: color 0.3s ease;
+
 }
 
 .nav-logo {
@@ -224,7 +226,7 @@ a {
 }
 
 /* Buttons */
-.block-group button {
+.block-group a {
   padding: 10px 20px;
   border-radius: 5px;
   background-color: #154bbf;
@@ -264,7 +266,7 @@ a {
     margin-bottom: 10px;
 }
 
-.Meet-button{
+.Meet a{
     background-color: #154bbf;
     padding: 10px 20px;
     border-radius: 5px;

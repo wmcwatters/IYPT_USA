@@ -13,6 +13,7 @@ h1 {
     background-color:  rgb(10, 33, 60);
     border-radius: 10px;
     max-width: 700px;
+    min-width: 500px;
     margin: 40px auto;
     padding: 20px;
 }
