@@ -1,3 +1,8 @@
+html{
+    scroll-behavior: smooth;
+}
+
+
 .Part{
   padding: 10px 20px;
   border-radius: 5px;
@@ -35,6 +40,7 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+  align-items: center;
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -44,6 +50,8 @@
 .Block-3,
 .Block-4,
 .Block-5 {
+  display: flex;
+  gap: 15px;
   background-color: white;
   padding: 25px;
   border-radius: 12px;
@@ -83,14 +91,20 @@
 .block-group a {
   text-align: center;
   font-size: 25px;
-  color: #154bbf;
+  color: white;
+  background: #154bbf;
+  background: linear-gradient(0deg,rgba(21, 75, 191, 1) 0%, rgba(0, 94, 255, 1) 100%);
   margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.2);
 }
 
 .block-group p {
-  font-size: clamp(14px, 1vw, 16px);
+  font-size: 17px;
   color: #333;
   margin-bottom: 20px;
+
 }
 
 .block-group button:hover {
@@ -117,13 +131,14 @@
 .s-Block-2,
 .s-Block-3,
 .s-Block-4{
+ 
   background-color: white;
   padding: 25px;
   border-radius: 12px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
   width: 100%;
   text-align: center;
-  font-size: 25px;
+  font-size: 7vw;
   font-weight: 600;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -142,7 +157,13 @@
 }
 
 .s-block-group p {
-  font-size: clamp(14px, 1vw, 16px);
+  font-size: 16px;
   color: #154bbf;
   margin-bottom: 20px;
+}
+
+.s-block-group li{
+   font-size: 16px;
+   color: #154bbf;
+   margin-bottom: 20px;
 }
