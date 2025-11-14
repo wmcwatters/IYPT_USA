@@ -225,7 +225,7 @@ a {
   margin-bottom: 20px;
 }
 
-/* Buttons */
+
 .block-group a {
   padding: 10px 20px;
   border-radius: 5px;
@@ -238,7 +238,7 @@ a {
   transition: background-color 0.3s ease;
 }
 
-.block-group button:hover {
+.block-group a:hover {
   background-color: #0037a3;
 }
 

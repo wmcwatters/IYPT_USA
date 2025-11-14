@@ -52,14 +52,15 @@ html{
 .Block-5 {
   display: flex;
   gap: 15px;
-  background-color: white;
+  background: #154bbf;
+  background: linear-gradient(0deg,rgba(21, 75, 191, 1) 0%, rgba(0, 94, 255, 1) 100%);
   padding: 25px;
   border-radius: 12px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
   width: 100%;
   text-align:left;
   font-size: 25px;
-  font-weight: 600;
+  font-weight: 500;
    text-align: justify;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -76,15 +77,13 @@ html{
 
 /* Headings and text */
 .block-group h1 {
-  
-  font-size: clamp(18px, 2vw, 24px);
-  color: #154bbf;
+  color: white;
   margin-bottom: 10px;
 }
 .block-group h2 {
   text-align: center;
   font-size: 40px;
-  color: #154bbf;
+  color:  #154bbf;
   margin-bottom: 10px;
 }
 
@@ -101,8 +100,8 @@ html{
 }
 
 .block-group p {
-  font-size: 17px;
-  color: #333;
+  font-size: 25px;
+  color: white;
   margin-bottom: 20px;
 
 }
