@@ -1,16 +1,28 @@
+<!--
+  CONTACT PAGE
+  This page contains the form people use to contact IYPT USA.
+  The layout and colors come from contact.css and styles.css.
+-->
 <html lang="en">
 <head>
+    <!-- Basic page settings so it works on all devices -->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Styles specific to the contact page -->
     <link rel="stylesheet" href="contact.css">
+    <!-- General website styles shared across multiple pages -->
     <link rel="stylesheet" href="styles.css">
+    <!-- Load the Poppins font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Title shown on browser tab -->
     <title>IYPT | Contact </title>
 </head>
 <body>
+<!-- Top navigation bar -->
     <header class="header">
         <nav class="navbar">
+            <!-- Logo that links back to the homepage -->
             <a href="index.html" class="nav-logo">IYPT USA</a>
+            <!-- Navigation menu items -->
             <ul class="nav-menu">
                 <li class="nav-item">
                     <a href="https://www.zeffy.com/en-US/donation-form/help-get-team-usa-to-switzerland" target="_blank" class="nav-link">Donate</a>
@@ -19,6 +31,7 @@
                     <a href="./contact.html" class="nav-link">Contact</a>
                 </li>
             </ul>
+            <!-- Hamburger menu for mobile screens -->
             <div class="hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -26,10 +39,13 @@
             </div>
         </nav>
 </header>
+<!-- Main contact form container -->
 <div class="container">
   <h1>IYPT Contact Form</h1>
+  <!-- Contact form handled through formsubmit.co -->
   <form target="_blank" action="https://formsubmit.co/stowewilson@students.cciu.org" method="POST">
     <div class="form-group">
+      <!-- Two input boxes: name and email -->
       <div class="form-row">
         <div class="col">
           <input type="text" name="name" class="form-control" placeholder="Full Name" required>
@@ -39,14 +55,17 @@
         </div>
       </div>
     </div>
+    <!-- Message box -->
     <div class="form-group">
       <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
     </div>
+    <!-- Submit button -->
     <div class="form-group">
       <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
     </div>
   </form>
 </div>
+<!-- Script that controls mobile menu behavior -->
 <script src="/main.js"></script>
 </body>
 </html>
