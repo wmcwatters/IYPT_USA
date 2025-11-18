@@ -1,3 +1,10 @@
+/* 
+  STYLES FOR IYPT USA WEBSITE
+  This file controls HOW the site looks: colors, spacing, and layout.
+  If you want to change how big things are, what color they are,
+  or how they are arranged, you will usually do it here.
+*/
+/* Overall page setup: use a nice font and stack content vertically */
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
@@ -6,6 +13,7 @@ body {
   flex-direction: column;
 }
 
+/* Main content area below the top navigation bar */
 main {
   display: flex;
   flex-direction: column;
@@ -14,12 +22,14 @@ main {
   
 }
 
+/* Reset margins and padding so the page looks consistent in all browsers */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Base settings for the entire page (font and sizing) */
 html {
     font-size: 62.5%;
     font-family: 'Roboto', sans-serif;
@@ -27,6 +37,7 @@ html {
     padding: 0;
 }
 
+/* List and link defaults: remove bullets and underlines from links */
 li {
     list-style: none;
 }
@@ -35,10 +46,12 @@ a {
     text-decoration: none;
 }
 
+/* Thin line under the top header bar */
 .header{
     border-bottom: 1px solid #E2E8F0;
 }
 
+/* Top navigation bar: logo on left, links on right */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -46,6 +59,7 @@ a {
     padding: 1rem 1.5rem;
 }
 
+/* "Hamburger" menu icon for phones and tablets (three stacked lines) */
 .hamburger {
     display: none;
 }
@@ -60,6 +74,7 @@ a {
     background-color: #101010;
 }
 
+/* Styles for the navigation menu links and logo at the top */
 .nav-menu {
     display: flex;
     justify-content: space-between;
@@ -88,6 +103,7 @@ a {
     color: #154bbf;
 }
 
+/* Big blue banner at the top with the main title, message, and buttons */
 .banner{
     display: flex;
     flex-direction: column;
@@ -99,6 +115,7 @@ a {
     padding: 50px;
 }
  
+/* Text styles inside the banner (large title and smaller description) */
 .banner h1{
     font-size: clamp(24px, 2vw, 48px);
     font-weight: 600;
@@ -111,6 +128,7 @@ a {
     color: white;
 }
 
+/* Group the two main buttons in the banner side-by-side */
 .Banner-button-group{
   display: flex;
   gap: 15px;
@@ -119,6 +137,7 @@ a {
   justify-content: center;
 }
 
+/* Styles for the red "Join the Team" button and white "Support the Mission" button */
 .join{
   padding: 10px 20px;
   border-radius: 5px;
@@ -153,6 +172,7 @@ a {
   color: #002f9e;
 }
 
+/* Section that explains the mission of the tournament */
 .Mission-Statement{
     display: flex;
     flex-direction: column;
@@ -176,6 +196,7 @@ a {
     color: black;
 }
 
+/* Background area behind the three white information boxes */
 .containers{
   display: flex;
   justify-content: center;
@@ -184,14 +205,17 @@ a {
   padding: 40px;
 }
 
+/* Row of three white boxes. On big screens they sit side by side; on small screens they stack. */
 .block-group{
   display: flex;
   flex-direction: row;
   gap: 20px;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: stretch;
 }
 
+/* Each individual white box (card) for students, teachers, and 2026 problems */
 .Block-1,
 .Block-2,
 .Block-3 {
@@ -201,10 +225,12 @@ a {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
   width: 300px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Hover effect for a “lift” animation */
+/* When the mouse goes over a card, make it lift slightly with a shadow */
 .Block-1:hover,
 .Block-2:hover,
 .Block-3:hover {
@@ -212,7 +238,7 @@ a {
   box-shadow: 0 10px 18px rgba(0, 0, 0, 0.2);
 }
 
-/* Headings and text */
+/* Text inside each card: blue titles and dark descriptions */
 .block-group h1 {
   font-size: clamp(18px, 2vw, 24px);
   color: #154bbf;
@@ -225,7 +251,8 @@ a {
   margin-bottom: 20px;
 }
 
-
+/* Blue button at the bottom of each card. 
+   "margin-top: auto" pushes the button to the bottom so all buttons line up. */
 .block-group a {
   padding: 10px 20px;
   border-radius: 5px;
@@ -236,12 +263,15 @@ a {
   border: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  margin-top: auto;
+  align-self: center;
 }
 
 .block-group a:hover {
   background-color: #0037a3;
 }
 
+/* Section with light blue background inviting people to follow the 2025 team */
 .Meet{
     display: flex;
     flex-direction: column;
@@ -265,8 +295,13 @@ a {
     color: black;
     margin-bottom: 10px;
 }
-
-.Meet a{
+/* Two buttons in the Meet section: one for the PDF, one for Instagram */
+.meet-row{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+.meet-row a{
     background-color: #154bbf;
     padding: 10px 20px;
     border-radius: 5px;
@@ -279,14 +314,19 @@ a {
     
 }
 
-.Meet-button:hover{
+/* Special style: make the Social Media button red while the other stays blue */
+.meet-row a.social-meet{
+    background-color: red;
+}
+
+
+.meet-row a:hover{
     transform: translateY(-5px);
     box-shadow: 0 10px 18px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-
-
+/* Dark blue section at the bottom where people can click to contact you */
 .Contact{
     background-color: rgb(10, 33, 60);
     display: flex;
@@ -312,6 +352,7 @@ a {
     margin-bottom: 10px;
 }
 
+/* Red "Contact us" button */
 .Contact-button{
    background-color: red;
     padding: 10px 20px;
@@ -324,6 +365,7 @@ a {
     transition: background-color 0.3s ease;
 }
 
+/* Small footer bar at the very bottom of the page with your name */
 footer{
   background-color: navy;
   color: white;
@@ -334,6 +376,12 @@ footer{
 }
 
 @media only screen and (max-width: 768px) {
+    /* 
+      MOBILE STYLES
+      Everything inside this section changes the layout on smaller screens (phones/tablets).
+      If the site looks strange on a phone, check this section.
+    */
+    /* Turn the top navigation into a dropdown-style menu on small screens */
     .nav-menu {
         position: fixed;
         left: -100%;
@@ -356,6 +404,7 @@ footer{
         margin: 2.5rem 0;
     }
 
+    /* Show the hamburger menu icon on small screens */
     .hamburger {
         display: block;
         cursor: pointer;
@@ -375,11 +424,13 @@ footer{
         transform: translateY(-8px) rotate(-45deg);
     }
 
+    /* Stack the three cards on top of each other on small screens, instead of side-by-side */
     .block-group {
     flex-direction: column;
     align-items: center;
    }
 
+    /* On small screens, make each card take up most of the screen width */
   .Block-1,
   .Block-2,
   .Block-3,

@@ -1,19 +1,35 @@
+<!--
+  MAIN HOMEPAGE FILE FOR IYPT USA WEBSITE
+  This file controls WHAT appears on the page (the words, buttons, and sections).
+  The colors and layout are controlled in styles.css.
+  If you want to change the text people read, you will do it here.
+-->
 <html lang="en">
 <head>
+    <!-- The head section contains behind-the-scenes settings for the page -->
+    <!-- Make sure the text on the page is displayed correctly in all languages -->
     <meta charset="UTF-8">
+    <!-- Make the page resize nicely on phones, tablets, and computers -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- These lines help Google and social media know what this site is about -->
     <meta name="description" content="Learn how to join Team USA for the International Young Physicists’ Tournament. Explore student information, selection process, physics problems, and official updates.">
     <meta property="og:title" content="Team USA | IYPT" />
     <meta property="og:description" content="Join Team USA for the International Young Physicists’ Tournament." />
     <meta property="og:type" content="website" />
+    <!-- Connect this page to the styles file (styles.css) which controls colors and layout -->
     <link rel="stylesheet" href="styles.css">
+    <!-- Load the Poppins font from the internet so the text looks nice -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- The title shown on the browser tab -->
     <title>IYPT | Homepage</title>
 </head>
 <body>
+<!-- The header at the top of the page with the logo and navigation links -->
 <header class="header">
         <nav class="navbar">
+            <!-- Website logo that also acts as a link back to the contact page -->
             <a href="./contact.html" class="nav-logo">IYPT USA</a>
+            <!-- Menu links in the top right (Donate, Contact) -->
             <ul class="nav-menu">
                 <li class="nav-item">
                     <a href="https://www.zeffy.com/en-US/donation-form/help-get-team-usa-to-switzerland" target="_blank" class="nav-link">Donate</a>
@@ -22,6 +38,7 @@
                     <a href="./contact.html" class="nav-link">Contact</a>
                 </li>
             </ul>
+            <!-- This "hamburger" icon appears on smaller screens for the mobile menu -->
             <div class="hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -29,10 +46,13 @@
             </div>
         </nav>
 </header>
+<!-- Everything below is the main content of the page -->
 <main>
+   <!-- Big blue banner at the top with main message and buttons -->
    <div class="banner">
     <h1>USIYPT - Team USA</h1>
     <p>Empowering the next generation of physicists through collaborative research and international competition.</p>
+    <!-- Two main buttons: one for students to join, one for donations -->
     <div class="Banner-button-group">
     <a href="./student.html" class="join">Join the Team</a>
     <a href="https://www.zeffy.com/en-US/donation-form/help-get-team-usa-to-switzerland
@@ -40,23 +60,28 @@
     </div>
    </div>
 
+   <!-- Section explaining the mission of the tournament -->
    <div class="Mission-Statement">
     <h1>Our Mission</h1>
     <p> The United States Invitational Young Physicists’ Tournament (USIYPT) brings together high school students to debate complex physics research problems, develop experimental skills, and represent the U.S. on the international stage.</p>
    </div>
 
+   <!-- Three white information boxes (students, teachers, and problems) -->
    <div class="containers">
     <div class="block-group">
+    <!-- First box: information for students -->
     <div class="Block-1">
         <h1>Student Information</h1>
         <p>Understand the structure, scoring, and expectations for teams.</p>
         <a href="./student.html ">View Information</a>
     </div>
+    <!-- Second box: information for teachers/mentors -->
     <div class="Block-2">
         <h1>Teacher Information</h1>
         <p>Explore competition archives and see how Team USA has performed worldwide.</p>
         <a href="./files/Guidelines for Mentors.pdf" target="_blank" >See Information</a>
     </div>
+    <!-- Third box: link to the 2026 physics problems -->
     <div class="Block-3">
         <h1>2026 Problems</h1>
         <p>Check out this years set of problems</p>
@@ -65,19 +90,29 @@
     </div>
    </div>
 
+   <!-- Section inviting people to follow along with the 2025 team and see trip details -->
    <div class="Meet">
     <h1>Follow along with the 2025 team</h1>
     <P>Each year, Team USA competes at the International Young Physicists’ Tournament, showcasing the brilliance of young American scientists.</P>
+    <!-- Two buttons: one opens a PDF about the Sweden trip, one opens Instagram -->
+    <div class="meet-row">
     <a href="./files/Sweden Trip.pdf" target="_blank">See the 2025 Team</a>
+    <a class="social-meet" href="https://www.instagram.com/iypt_usa/" target="_blank">Social media</a>
+    </div>
    </div>
 
+    <!-- Contact section at the bottom of the page -->
     <div class="Contact">
         <h1>Get in Touch</h1>
         <p>Interested in sponsoring, joining, or volunteering? Reach out to us.</p>
+        <!-- Button that takes people to the contact page -->
         <a href="contact.html" class="Contact-button">Contact us</a>
     </div>
 </main>
+<!-- The small bar at the very bottom of the page -->
 <footer> Made by Stowe "Danger" Wilson</footer>
+  <!-- This connects to the JavaScript file (main.js), which makes the menu button work on mobile.
+       If something breaks with the menu, the logic is probably in main.js. -->
   <script src="/main.js"></script>
 </body>
 </html>

@@ -1,14 +1,14 @@
+/*
+  CONTACT PAGE STYLES
+  Controls the appearance of the contact form including layout, spacing,
+  colors, button behavior, and input styling.
+*/
+/* Apply Poppins font to the whole contact page */
 body{
     font-family: 'Poppins', sans-serif;
 }
 
-h1 {
-  text-align: center;
-  margin: 35px 0 20px 0 !important;
-  color: white;
-  
-}
-
+/* Main form container box (dark blue background) */
 .container{
     background-color:  rgb(10, 33, 60);
     border-radius: 10px;
@@ -18,6 +18,7 @@ h1 {
     padding: 20px;
 }
 
+/* Row containing two side-by-side input boxes (name + email) */
 .form-row{
     display: flex;
     flex-direction: row;
@@ -30,12 +31,14 @@ h1 {
     flex: 1;
 }
 
+/* Center alignment for message box container */
 .form-group{
     display: flex;
     justify-content: center;
     width: 100%;
     max-width: 600px;
 }
+/* Text input styling: padding, rounded edges, clean layout */
 input{
     width: 100%;
     padding: 10px;
@@ -47,6 +50,7 @@ input{
 
 }
 
+/* Large message box styling */
 textarea{
     width: 100%;
     padding: 10px;
@@ -57,6 +61,7 @@ textarea{
     box-sizing: border-box;
 }
 
+/* Submit button styling (white by default, blue border) */
 button{
     width: 100%;
     padding: 10px;
@@ -70,6 +75,7 @@ button{
    
 }
 
+/* Hover effect: button turns red with white text */
 button:hover{
     background-color: red;
     color: white;
