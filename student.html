@@ -4,128 +4,376 @@
   participating in the IYPT USA selection process.
   Colors and layout come from styles.css and student.css.
 -->
+
 <html lang="en">
+
 <head>
     <!-- Basic settings to make sure the page works on all devices -->
     <meta charset="UTF-8">
+
     <!-- Main website styles -->
     <link rel="stylesheet" href="styles.css">
-     <!-- Styles specific to the student information page -->
+
+    <!-- Styles specific to the student information page -->
     <link rel="stylesheet" href="student.css">
+
     <!-- Load the Poppins font for consistent text styling -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Title shown on the browser tab -->
-    <title>IYPT | Student</title>
-</head>
-<body>
-<!-- Top navigation bar (logo + donate + contact) -->
-<header class="header">
-        <nav class="navbar">
-            <!-- Logo that takes users back to the homepage -->
-            <a href="./index.html" class="nav-logo">IYPT USA</a>
-            <!-- Navigation menu items -->
-            <ul class="nav-menu">
-                <li class="nav-item">
-                    <!-- External donation link (opens in new tab) -->
-                    <a href="https://www.zeffy.com/en-US/donation-form/help-get-team-usa-to-switzerland" class="nav-link" target="_blank" >Donate</a>
-                </li>
-                <li class="nav-item">
-                    <a href="./contact.html" class="nav-link">Contact</a>
-                </li>
-            </ul>
-            <!-- Hamburger menu icon for phones/tablets -->
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </nav>
-</header>
-<!-- Main content of the student information page -->
-<main>
-   <!-- Blue banner with page title and three main action buttons -->
-   <div class="banner">
-    <h1>Student Information</h1>
-    <div class="Banner-button-group">
-    <a class="Part" href="#Participate" >Participate</a>
-    <a class="Pro" href="#Process" >Selection Process</a>
-    <a class="Pro" href="./files/Timelines and Expectations.pdf" >Download PDF</a>
-    </div>
-   </div>
 
-   <!-- Section containing the large white "Participate" blocks -->
- <div class="containers">
-        <!-- Step-by-step breakdown of how to participate -->
-    <div class="block-group" id="Participate">
-        <h2>Participate</h2>
-        <a>There will be many students completing a research problem for consideration by the national selection committee.  
-                Our goal is to select the five students with the best research.  However, we cannot select 5 students who have completed the same problem,
-                so selection to the US team will be a combination of the quality of the research and ensuring problem coverage.</a>
-        <!-- Step 1 (this block explains requirement #1) -->
-    <div class="Block-1">
-        <h1>1.</h1>
-        <p> Complete at least 1 problem by Friday, March 13 2026. 
-             To submit your solution, students will provide a static 
-             PDF copy of their slides and a 12-minute recording presenting the slides.</p>
-    </div>
-        <!-- Step 2 (this block explains requirement #2) -->
-    <div class="Block-2">
-        <h1>2.</h1>
-        <p>The submitted problems will be evaluated by independent reviewers who are 
-            experts in physics (college professors, former IYPT jurors etc) </p>
-    </div>
-        <!-- Step 3 (this block explains requirement #3) -->
-    <div class="Block-3">
-        <h1>3.</h1>
-        <p>A subset of the submitted reports will be selected for a round two interview. 
-            Interviews will be conducted before the end of March, when the final team will be announced.</p>
-    </div>
-        <!-- Step 4 (this block explains requirement #4) -->
-    <div class="Block-4">
-        <h1>4.</h1>
-        <p>Team members will then need to complete an additional problem prior to the tournament in July.</p>
-    </div>
-        <!-- Step 5 (this block explains requirement #5) -->
-    <div class="Block-5">
-        <h1>5.</h1>
-        <p>Applicants may work individually or as a team of students.  However, only one student can submit the work for a problem.</p>
-    </div>
-    </div>
-   </div>
-   
-<!-- Section explaining selection process, support, cost, and travel -->
-<div class="Selection-Containers">
-        <!-- Four smaller white blocks explaining details of the selection process -->
-    <div class="s-block-group" id="Process">
-            <!-- Topic block explaining: Selecting students for the US team -->
-        <div class="s-Block-1">
-            <h1>Selecting students for the US team</h1>
-            <p>There will be many students completing a research problem for consideration by the national selection committee.  
-                Our goal is to select the five students with the best research.  However, we cannot select 5 students who have completed the same problem,
-                so selection to the US team will be a combination of the quality of the research and ensuring problem coverage. </p>
+    <!-- Title shown on the browser tab -->
+    <title>IYPT USA | Student Information</title>
+</head>
+
+<body>
+
+<!-- Top navigation bar -->
+<header class="header">
+    <nav class="navbar">
+
+        <!-- Logo that takes users back to the homepage -->
+        <a href="./index.html" class="nav-logo">IYPT USA</a>
+
+        <!-- Navigation menu -->
+        <ul class="nav-menu">
+
+            <li class="nav-item">
+                <a href="https://www.zeffy.com/en-US/donation-form/help-team-usa-compete-in-auckland-new-zealand"
+                   class="nav-link"
+                   target="_blank">
+                    Donate
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a href="./contact.html" class="nav-link">Contact</a>
+            </li>
+
+        </ul>
+
+        <!-- Hamburger menu icon for phones/tablets -->
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
         </div>
-            <!-- Topic block explaining: Student Support with research -->
-        <div class="s-Block-2">
-            <h1>Student Support with research</h1>
-            <p>When requested, we will arrange video conference calls with subject matter experts to help you with your work. 
-                 When requested, we can facilitate finding academic research.  We can provide guidance on experimental design and data analysis. 
-                  Please, just ask.</p>
+
+    </nav>
+</header>
+
+
+<!-- Main content -->
+<main>
+
+    <!-- Banner -->
+    <div class="banner">
+
+        <h1>Student Information</h1>
+
+        <div class="Banner-button-group">
+
+            <a class="Part" href="#Participate">
+                Participate
+            </a>
+
+            <a class="Pro" href="#Process">
+                Selection Process
+            </a>
+
+            <a class="Pro" href="./files/US-IYPT-2027-Selection-Process.pdf">
+                Download PDF
+            </a>
+
         </div>
-            <!-- Topic block explaining: Cost of Participation -->
-        <div class="s-Block-3">
-            <h1>Cost of Participation</h1>
-            <p>We are currently aggressively fundraising for Team USA 2026.  Worst case scenario is that we fundraise $0 dollars and the estimated cost would be $4000 per student.  However, we expect that not to be the case.  We have several corporations that have indicated they will support our mission; we are waiting for confirmation. 
-                 When you indicate an interest in participation, we will keep you apprised of our fundraising efforts.</p>
-        </div>
-            <!-- Topic block explaining: Estimated Travel -->
-        <div class="s-Block-4">
-            <h1>Estimated Travel</h1>
-            <p>Below is what we hope travel expectations will be.  However, this is right around the 250-year anniversary of birth of our country in Philadelphia.  We will need to be flexible here.</p>
-            <li><u>Travel Dates:</u> Arrive in Philly June 30th for a pre-tournament "bootcamp".  Fly out together on July 3rd to Zurich.</li>
-            <li><u>Tournament Dates:</u> July 5th-July 12</li>
-            <li><u>Return to Philadelphia:</u> July 12, 2025</li>
-        </div>
-    
+
     </div>
-</div>
-   </file>
+
+
+    <!-- Participate Section -->
+    <div class="containers">
+
+        <div class="block-group" id="Participate">
+
+            <h2>Participate in Team USA Selection</h2>
+
+            <p>
+                Students interested in competing for Team USA should contact
+                US IYPT by email at
+                <a href="mailto:physics.iypt@gmail.com">physics.iypt@gmail.com</a>
+                or through Instagram at <strong>@iypt_usa</strong>.
+            </p>
+
+            <p>
+                Once we know you are competing, we can provide resources and
+                support to help you be successful. Students must have a local
+                mentor or teaching professional who can help ensure their
+                safety during experiments and provide guidance on the physics.
+            </p>
+
+
+            <!-- Step 1 -->
+            <div class="Block-1">
+
+                <h1>1.</h1>
+
+                <p>
+                    Select one of the 2027 IYPT problems and let us know that
+                    you intend to participate. We encourage students to tell
+                    us which problem they are researching so that we can let
+                    them know when many other students are already working on
+                    the same problem.
+                </p>
+
+            </div>
+
+
+            <!-- Step 2 -->
+            <div class="Block-2">
+
+                <h1>2.</h1>
+
+                <p>
+                    Submit a first draft of your research slides and a brief
+                    explanation video of less than 10 minutes for one problem
+                    no later than <strong>midnight January 18, 2027</strong>.
+                    Submissions should be sent to
+                    <a href="mailto:physics.iypt@gmail.com">
+                        physics.iypt@gmail.com
+                    </a>.
+                </p>
+
+            </div>
+
+
+            <!-- Step 3 -->
+            <div class="Block-3">
+
+                <h1>3.</h1>
+
+                <p>
+                    Our team of college professors will evaluate the first-round
+                    submissions. Every student who submits work will receive
+                    detailed feedback identifying both the strengths of the
+                    submission and specific areas for improvement.
+                </p>
+
+            </div>
+
+
+            <!-- Step 4 -->
+            <div class="Block-4">
+
+                <h1>4.</h1>
+
+                <p>
+                    The strongest reports will be selected as finalists for
+                    consideration for the National Team traveling to
+                    <strong>Auckland, New Zealand</strong> for IYPT 2027.
+                    Finalists will receive concrete recommendations for
+                    improving their research and making their reports
+                    tournament ready.
+                </p>
+
+            </div>
+
+
+            <!-- Step 5 -->
+            <div class="Block-5">
+
+                <h1>5.</h1>
+
+                <p>
+                    Finalists will submit their improved final report and a
+                    <strong>12-minute video presentation</strong> by
+                    <strong>midnight February 26, 2027</strong>.
+                </p>
+
+            </div>
+
+
+            <!-- Step 6 -->
+            <div class="Block-1">
+
+                <h1>6.</h1>
+
+                <p>
+                    The national selection board, composed of college
+                    professors, former IYPT jurors, and former team leaders,
+                    will evaluate the final submissions.
+                </p>
+
+            </div>
+
+
+            <!-- Step 7 -->
+            <div class="Block-2">
+
+                <h1>7.</h1>
+
+                <p>
+                    Students under consideration for the National Team will
+                    participate in an interview with members of the selection
+                    board to discuss their research. Following these
+                    interviews, the <strong>five members of Team USA</strong>
+                    will be selected.
+                </p>
+
+            </div>
+
+
+            <!-- Step 8 -->
+            <div class="Block-3">
+
+                <h1>8.</h1>
+
+                <p>
+                    Students selected for Team USA will complete an additional
+                    IYPT problem before the tournament in July. Information
+                    about selecting the second problem will be provided during
+                    the selection interviews or upon request.
+                </p>
+
+            </div>
+
+
+            <!-- Step 9 -->
+            <div class="Block-4">
+
+                <h1>9.</h1>
+
+                <p>
+                    Applicants may work individually or as part of a group of
+                    students. However, only one student may submit the work for
+                    a particular problem for consideration for Team USA.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Selection Process / Additional Information -->
+    <div class="Selection-Containers">
+
+        <div class="s-block-group" id="Process">
+
+
+            <!-- Selecting Problems -->
+            <div class="s-Block-1">
+
+                <h1>Selecting a Problem</h1>
+
+                <p>
+                    Most important to us is that you have a good experience,
+                    and selecting the right problem is an important first step.
+                    Ideally, every student would select a problem they find
+                    exciting and our strongest students would all choose
+                    different problems.
+                </p>
+
+                <p>
+                    Please let us know which problem you have selected. We will
+                    not force you to choose a particular problem, but we will
+                    let you know if many other students are already researching
+                    the same problem.
+                </p>
+
+            </div>
+
+
+            <!-- Student Support -->
+            <div class="s-Block-2">
+
+                <h1>Student Support with Research</h1>
+
+                <p>
+                    Every month, US IYPT will arrange several 30-minute video
+                    conference opportunities with subject-matter experts to
+                    help students with their research.
+                </p>
+
+                <p>
+                    We can also help students locate academic research and
+                    provide guidance on experimental design, physics, data
+                    analysis, and developing a successful IYPT report.
+                    Meetings will be available by appointment on a
+                    first-come, first-served basis.
+                </p>
+
+            </div>
+
+
+            <!-- Cost -->
+            <div class="s-Block-3">
+
+                <h1>Cost of Participation</h1>
+
+                <p>
+                    We are actively fundraising for Team USA 2027. Our
+                    worst-case estimate, assuming no fundraising support,
+                    is approximately <strong>$5,000 per student</strong>.
+                </p>
+
+                <p>
+                    We expect fundraising to reduce that amount. Students and
+                    families who indicate an interest in participating will be
+                    kept informed about our fundraising progress and expected
+                    student costs.
+                </p>
+
+            </div>
+
+
+            <!-- Travel -->
+            <div class="s-Block-4">
+
+                <h1>Estimated Travel</h1>
+
+                <p>
+                    The 2027 International Young Physicists' Tournament will
+                    take place in <strong>Auckland, New Zealand</strong>.
+                    We plan to arrive early enough for students to adjust to
+                    the time change before competition begins. Exact travel
+                    arrangements remain subject to change.
+                </p>
+
+                <ul>
+
+                    <li>
+                        <u>Pre-Tournament Bootcamp:</u>
+                        Arrive in Philadelphia June 30
+                    </li>
+
+                    <li>
+                        <u>Depart for Auckland:</u>
+                        July 2
+                    </li>
+
+                    <li>
+                        <u>Tournament Dates:</u>
+                        July 5 – July 12
+                    </li>
+
+                    <li>
+                        <u>Return:</u>
+                        Depart Auckland following the tournament on July 12
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</main>
+
+
+<!-- Website JavaScript -->
+<script src="main.js"></script>
+
+</body>
+
+</html>
