@@ -8,61 +8,127 @@
 <html lang="en">
 
 <head>
-    <!-- Basic settings to make sure the page works on all devices -->
+
     <meta charset="UTF-8">
 
     <!-- Main website styles -->
     <link rel="stylesheet" href="styles.css">
 
-    <!-- Styles specific to the student information page -->
+    <!-- Student page styles -->
     <link rel="stylesheet" href="student.css">
 
-    <!-- Load the Poppins font for consistent text styling -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!--
+      Small overrides for this page:
+      1. Make the introductory Participate text dark.
+      2. Keep every numbered item on one consistent row.
+    -->
+    <style>
 
-    <!-- Title shown on the browser tab -->
+        /* Introductory text above the numbered boxes */
+        #Participate > p {
+            color: #222222 !important;
+        }
+
+        /* Make every numbered participation box use the same layout */
+        .Block-1,
+        .Block-2,
+        .Block-3,
+        .Block-4,
+        .Block-5 {
+            display: flex !important;
+            align-items: flex-start !important;
+            gap: 18px;
+        }
+
+        /* Keep the number beside the first line of text */
+        .Block-1 h1,
+        .Block-2 h1,
+        .Block-3 h1,
+        .Block-4 h1,
+        .Block-5 h1 {
+            flex: 0 0 auto;
+            margin: 0 !important;
+            line-height: 1.5;
+        }
+
+        /* Remove paragraph top margin so text begins beside number */
+        .Block-1 p,
+        .Block-2 p,
+        .Block-3 p,
+        .Block-4 p,
+        .Block-5 p {
+            margin-top: 0 !important;
+            margin-bottom: 0 !important;
+            flex: 1;
+        }
+
+    </style>
+
+    <!-- Poppins font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
     <title>IYPT USA | Student Information</title>
+
 </head>
 
 <body>
 
+
 <!-- Top navigation bar -->
 <header class="header">
+
     <nav class="navbar">
 
-        <!-- Logo that takes users back to the homepage -->
+        <!-- Logo -->
         <a href="./index.html" class="nav-logo">IYPT USA</a>
 
         <!-- Navigation menu -->
         <ul class="nav-menu">
 
             <li class="nav-item">
-                <a href="https://www.zeffy.com/en-US/donation-form/help-team-usa-compete-in-auckland-new-zealand"
-                   class="nav-link"
-                   target="_blank">
+
+                <a
+                    href="https://www.zeffy.com/en-US/donation-form/help-team-usa-compete-in-auckland-new-zealand"
+                    class="nav-link"
+                    target="_blank">
+
                     Donate
+
                 </a>
+
             </li>
 
             <li class="nav-item">
-                <a href="./contact.html" class="nav-link">Contact</a>
+
+                <a href="./contact.html" class="nav-link">
+                    Contact
+                </a>
+
             </li>
 
         </ul>
 
-        <!-- Hamburger menu icon for phones/tablets -->
+
+        <!-- Hamburger menu -->
         <div class="hamburger">
+
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
+
         </div>
 
     </nav>
+
 </header>
+
 
 
 <!-- Main content -->
 <main>
+
 
     <!-- Banner -->
     <div class="banner">
@@ -79,8 +145,12 @@
                 Selection Process
             </a>
 
-            <a class="Pro" href="./files/US-IYPT-2027-Selection-Process.pdf">
+            <a
+                class="Pro"
+                href="./files/US-IYPT-2027-Selection-Process.pdf">
+
                 Download PDF
+
             </a>
 
         </div>
@@ -88,12 +158,15 @@
     </div>
 
 
-    <!-- Participate Section -->
+
+    <!-- PARTICIPATION SECTION -->
     <div class="containers">
 
         <div class="block-group" id="Participate">
 
+
             <h2>Participate in Team USA Selection</h2>
+
 
             <p>
                 Students interested in competing for Team USA should contact
@@ -101,12 +174,14 @@
                 through Instagram at <strong>@iypt_usa</strong>.
             </p>
 
+
             <p>
                 Once we know you are competing, we can provide resources and
                 support to help you be successful. Students must have a local
                 mentor or teaching professional who can help ensure their
                 safety during experiments and provide guidance on the physics.
             </p>
+
 
 
             <!-- Step 1 -->
@@ -125,6 +200,7 @@
             </div>
 
 
+
             <!-- Step 2 -->
             <div class="Block-2">
 
@@ -141,6 +217,7 @@
             </div>
 
 
+
             <!-- Step 3 -->
             <div class="Block-3">
 
@@ -154,6 +231,7 @@
                 </p>
 
             </div>
+
 
 
             <!-- Step 4 -->
@@ -173,6 +251,7 @@
             </div>
 
 
+
             <!-- Step 5 -->
             <div class="Block-5">
 
@@ -187,6 +266,7 @@
             </div>
 
 
+
             <!-- Step 6 -->
             <div class="Block-1">
 
@@ -199,6 +279,7 @@
                 </p>
 
             </div>
+
 
 
             <!-- Step 7 -->
@@ -217,6 +298,7 @@
             </div>
 
 
+
             <!-- Step 8 -->
             <div class="Block-3">
 
@@ -232,6 +314,7 @@
             </div>
 
 
+
             <!-- Step 9 -->
             <div class="Block-4">
 
@@ -245,15 +328,18 @@
 
             </div>
 
+
         </div>
 
     </div>
 
 
-    <!-- Selection Process / Additional Information -->
+
+    <!-- ADDITIONAL SELECTION INFORMATION -->
     <div class="Selection-Containers">
 
         <div class="s-block-group" id="Process">
+
 
 
             <!-- Selecting Problems -->
@@ -279,6 +365,7 @@
             </div>
 
 
+
             <!-- Student Support -->
             <div class="s-Block-2">
 
@@ -299,6 +386,7 @@
                 </p>
 
             </div>
+
 
 
             <!-- Cost -->
@@ -322,6 +410,7 @@
             </div>
 
 
+
             <!-- Travel -->
             <div class="s-Block-4">
 
@@ -334,6 +423,7 @@
                     the time change before competition begins. Exact travel
                     arrangements remain subject to change.
                 </p>
+
 
                 <ul>
 
@@ -361,11 +451,14 @@
 
             </div>
 
+
         </div>
 
     </div>
 
+
 </main>
+
 
 
 <!-- Website JavaScript -->
