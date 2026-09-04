@@ -17,11 +17,7 @@
     <!-- Student page styles -->
     <link rel="stylesheet" href="student.css">
 
-    <!--
-      Small overrides for this page:
-      1. Make the introductory Participate text dark.
-      2. Keep every numbered item on one consistent row.
-    -->
+    <!-- Page-specific fixes -->
     <style>
 
         /* Introductory text above the numbered boxes */
@@ -29,37 +25,28 @@
             color: #222222 !important;
         }
 
-        /* Make every numbered participation box use the same layout */
-        .Block-1,
-        .Block-2,
-        .Block-3,
-        .Block-4,
-        .Block-5 {
-            display: flex !important;
-            align-items: flex-start !important;
-            gap: 18px;
+        /*
+          Numbers are placed directly inside each paragraph.
+          This guarantees that every number starts on the same
+          line as its corresponding text.
+        */
+        .step-number {
+            font-weight: 700;
+            margin-right: 12px;
+            white-space: nowrap;
         }
 
-        /* Keep the number beside the first line of text */
-        .Block-1 h1,
-        .Block-2 h1,
-        .Block-3 h1,
-        .Block-4 h1,
-        .Block-5 h1 {
-            flex: 0 0 auto;
-            margin: 0 !important;
-            line-height: 1.5;
-        }
-
-        /* Remove paragraph top margin so text begins beside number */
+        /*
+          Override any old positioning rules applied to paragraphs
+          inside the numbered boxes.
+        */
         .Block-1 p,
         .Block-2 p,
         .Block-3 p,
         .Block-4 p,
         .Block-5 p {
-            margin-top: 0 !important;
-            margin-bottom: 0 !important;
-            flex: 1;
+            width: auto !important;
+            margin: 0 !important;
         }
 
     </style>
@@ -76,13 +63,15 @@
 <body>
 
 
-<!-- Top navigation bar -->
+<!-- TOP NAVIGATION -->
 <header class="header">
 
     <nav class="navbar">
 
         <!-- Logo -->
-        <a href="./index.html" class="nav-logo">IYPT USA</a>
+        <a href="./index.html" class="nav-logo">
+            IYPT USA
+        </a>
 
         <!-- Navigation menu -->
         <ul class="nav-menu">
@@ -126,14 +115,16 @@
 
 
 
-<!-- Main content -->
+<!-- MAIN CONTENT -->
 <main>
 
 
-    <!-- Banner -->
+    <!-- PAGE BANNER -->
     <div class="banner">
 
-        <h1>Student Information</h1>
+        <h1>
+            Student Information
+        </h1>
 
         <div class="Banner-button-group">
 
@@ -159,13 +150,15 @@
 
 
 
-    <!-- PARTICIPATION SECTION -->
+    <!-- PARTICIPATE SECTION -->
     <div class="containers">
 
         <div class="block-group" id="Participate">
 
 
-            <h2>Participate in Team USA Selection</h2>
+            <h2>
+                Participate in Team USA Selection
+            </h2>
 
 
             <p>
@@ -184,12 +177,11 @@
 
 
 
-            <!-- Step 1 -->
+            <!-- STEP 1 -->
             <div class="Block-1">
 
-                <h1>1.</h1>
-
                 <p>
+                    <span class="step-number">1.</span>
                     Select one of the 2027 IYPT problems and let us know that
                     you intend to participate. We encourage students to tell
                     us which problem they are researching so that we can let
@@ -201,12 +193,11 @@
 
 
 
-            <!-- Step 2 -->
+            <!-- STEP 2 -->
             <div class="Block-2">
 
-                <h1>2.</h1>
-
                 <p>
+                    <span class="step-number">2.</span>
                     Submit a first draft of your research slides and a brief
                     explanation video of less than 10 minutes for one problem
                     no later than <strong>midnight January 18, 2027</strong>.
@@ -218,12 +209,11 @@
 
 
 
-            <!-- Step 3 -->
+            <!-- STEP 3 -->
             <div class="Block-3">
 
-                <h1>3.</h1>
-
                 <p>
+                    <span class="step-number">3.</span>
                     Our team of college professors will evaluate the first-round
                     submissions. Every student who submits work will receive
                     detailed feedback identifying both the strengths of the
@@ -234,12 +224,11 @@
 
 
 
-            <!-- Step 4 -->
+            <!-- STEP 4 -->
             <div class="Block-4">
 
-                <h1>4.</h1>
-
                 <p>
+                    <span class="step-number">4.</span>
                     The strongest reports will be selected as finalists for
                     consideration for the National Team traveling to
                     <strong>Auckland, New Zealand</strong> for IYPT 2027.
@@ -252,12 +241,11 @@
 
 
 
-            <!-- Step 5 -->
+            <!-- STEP 5 -->
             <div class="Block-5">
 
-                <h1>5.</h1>
-
                 <p>
+                    <span class="step-number">5.</span>
                     Finalists will submit their improved final report and a
                     <strong>12-minute video presentation</strong> by
                     <strong>midnight February 26, 2027</strong>.
@@ -267,12 +255,11 @@
 
 
 
-            <!-- Step 6 -->
+            <!-- STEP 6 -->
             <div class="Block-1">
 
-                <h1>6.</h1>
-
                 <p>
+                    <span class="step-number">6.</span>
                     The national selection board, composed of college
                     professors, former IYPT jurors, and former team leaders,
                     will evaluate the final submissions.
@@ -282,12 +269,11 @@
 
 
 
-            <!-- Step 7 -->
+            <!-- STEP 7 -->
             <div class="Block-2">
 
-                <h1>7.</h1>
-
                 <p>
+                    <span class="step-number">7.</span>
                     Students under consideration for the National Team will
                     participate in an interview with members of the selection
                     board to discuss their research. Following these
@@ -299,12 +285,11 @@
 
 
 
-            <!-- Step 8 -->
+            <!-- STEP 8 -->
             <div class="Block-3">
 
-                <h1>8.</h1>
-
                 <p>
+                    <span class="step-number">8.</span>
                     Students selected for Team USA will complete an additional
                     IYPT problem before the tournament in July. Information
                     about selecting the second problem will be provided during
@@ -315,12 +300,11 @@
 
 
 
-            <!-- Step 9 -->
+            <!-- STEP 9 -->
             <div class="Block-4">
 
-                <h1>9.</h1>
-
                 <p>
+                    <span class="step-number">9.</span>
                     Applicants may work individually or as part of a group of
                     students. However, only one student may submit the work for
                     a particular problem for consideration for Team USA.
@@ -342,10 +326,12 @@
 
 
 
-            <!-- Selecting Problems -->
+            <!-- SELECTING PROBLEMS -->
             <div class="s-Block-1">
 
-                <h1>Selecting a Problem</h1>
+                <h1>
+                    Selecting a Problem
+                </h1>
 
                 <p>
                     Most important to us is that you have a good experience,
@@ -366,10 +352,12 @@
 
 
 
-            <!-- Student Support -->
+            <!-- STUDENT SUPPORT -->
             <div class="s-Block-2">
 
-                <h1>Student Support with Research</h1>
+                <h1>
+                    Student Support with Research
+                </h1>
 
                 <p>
                     Every month, US IYPT will arrange several 30-minute video
@@ -389,10 +377,12 @@
 
 
 
-            <!-- Cost -->
+            <!-- COST -->
             <div class="s-Block-3">
 
-                <h1>Cost of Participation</h1>
+                <h1>
+                    Cost of Participation
+                </h1>
 
                 <p>
                     We are actively fundraising for Team USA 2027. Our
@@ -411,10 +401,12 @@
 
 
 
-            <!-- Travel -->
+            <!-- TRAVEL -->
             <div class="s-Block-4">
 
-                <h1>Estimated Travel</h1>
+                <h1>
+                    Estimated Travel
+                </h1>
 
                 <p>
                     The 2027 International Young Physicists' Tournament will
@@ -461,8 +453,9 @@
 
 
 
-<!-- Website JavaScript -->
+<!-- WEBSITE JAVASCRIPT -->
 <script src="main.js"></script>
+
 
 </body>
 
